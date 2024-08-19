@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "app"
+version = "0.1.0"
+description = "llmsherpa api"
+authors = ["Hidayat Taufiqur <hidayattaufiqur@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.scripts]
+main = "app:create_app()"
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.13"
+flask = {extras = ["async"], version = "^3.0.3"}
+libmagic = "^1.0"
+nlm-ingestor = "^0.1.7"
